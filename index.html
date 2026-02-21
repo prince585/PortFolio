@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button id="themeToggle" type="button" aria-label="Toggle theme">
+    <span id="themeLabel">Dark</span>
+</button>
+
+<div class="home-wrapper">
+
+    <div class="window home-window">
+        <div class="window-header">Home</div>
+
+        <div class="home-content">
+            <h1>hi! i'm <span>Prince</span></h1>
+            <p>Java Developer | Backend Focused</p>
+
+            <div class="nav-icons">
+
+                <button class="icon-box" type="button" data-window="aboutWindow" aria-label="Open about window">
+                    <img src="assets/icons/about.svg" alt="About">
+                    <span>About</span>
+                </button>
+
+                <button class="icon-box" type="button" data-window="projectsWindow" aria-label="Open projects window">
+                    <img src="assets/icons/projects.svg" alt="Projects">
+                    <span>Projects</span>
+                </button>
+
+                <button class="icon-box" type="button" data-window="skillsWindow" aria-label="Open skills window">
+                    <img src="assets/icons/skills.svg" alt="Skills">
+                    <span>Skills</span>
+                </button>
+
+                <button class="icon-box" type="button" data-window="educationWindow" aria-label="Open education window">
+                    <img src="assets/icons/education.svg" alt="Education">
+                    <span>Education</span>
+                </button>
+
+                <button class="icon-box" type="button" data-window="certificationsWindow" aria-label="Open certifications window">
+                    <img src="assets/icons/certificate.svg" alt="Certifications">
+                    <span>Certifications</span>
+                </button>
+
+                <button class="icon-box" type="button" data-window="contactWindow" aria-label="Open contact window">
+                    <img src="assets/icons/contact.svg" alt="Contact">
+                    <span>Contact</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT WINDOW -->
+<div class="window popup" id="aboutWindow" role="dialog" aria-hidden="true" aria-labelledby="aboutTitle" tabindex="-1">
+    <div class="window-header drag">
+        <span id="aboutTitle">About</span>
+        <button type="button" data-close="aboutWindow" aria-label="Close about window">x</button>
+    </div>
+    <div class="window-body about-body">
+        <div class="about-top">
+            <img src="assets/images/me.jpg" class="profile" alt="Prince Verma profile">
+            <div class="about-intro">
+                <h2>Prince Verma</h2>
+                <p>Backend-focused Java developer building structured systems with strong problem-solving fundamentals.</p>
+                <a class="resume-btn" href="assets/resume/Prince_Verma_Intern_Resume.pdf" download>Download Resume</a>
+            </div>
+        </div>
+
+        <div class="about-details">
+            <h3>About</h3>
+            <p>I approach backend development from a logic-first perspective.</p>
+            <p>I regularly solve algorithmic problems on GeeksforGeeks to strengthen data structures, complexity analysis, and implementation discipline.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PROJECTS WINDOW -->
+<div class="window popup" id="projectsWindow" role="dialog" aria-hidden="true" aria-labelledby="projectsTitle" tabindex="-1">
+    <div class="window-header drag">
+        <span id="projectsTitle">Projects</span>
+        <button type="button" data-close="projectsWindow" aria-label="Close projects window">x</button>
+    </div>
+
+    <div class="window-body projects-grid">
+
+        <div class="project-card">
+            <img src="assets/projects/project1.png" class="project-thumb" alt="Greensankalp project screenshot">
+            <h3>GREENSANKALP</h3>
+            <hr>
+            <a href="https://github.com/prince585/GreenSankalp" target="_blank" rel="noopener noreferrer">Visit Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/projects/project2.png" class="project-thumb" alt="BankingApp project screenshot">
+            <h3>BankingApp</h3>
+            <hr>
+            <a href="https://github.com/prince585/BankingApp" target="_blank" rel="noopener noreferrer">Visit Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/projects/project3.png" class="project-thumb" alt="Google Store Clone project screenshot">
+            <h3>Google Store Clone</h3>
+            <hr>
+            <a href="https://google-store-clone-minor-project.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- SKILLS WINDOW -->
+<div class="window popup" id="skillsWindow" role="dialog" aria-hidden="true" aria-labelledby="skillsTitle" tabindex="-1">
+    <div class="window-header drag">
+        <span id="skillsTitle">skills</span>
+        <button type="button" data-close="skillsWindow" aria-label="Close skills window">x</button>
+    </div>
+
+    <div class="window-body skills-grid">
+
+        <div class="skill-item">
+            <img src="assets/icons/java.svg" alt="Java">
+            <span>Java</span>
+        </div>
+
+        <div class="skill-item">
+            <img src="assets/icons/cpp.svg" alt="C plus plus">
+            <span>C++</span>
+        </div>
+
+        <div class="skill-item">
+            <img src="assets/icons/html.svg" alt="HTML">
+            <span>HTML</span>
+        </div>
+
+        <div class="skill-item">
+            <img src="assets/icons/css.svg" alt="CSS">
+            <span>CSS</span>
+        </div>
+
+        <div class="skill-item">
+            <img src="assets/icons/github.svg" alt="Git and GitHub">
+            <span>Git and GitHub</span>
+        </div>
+
+        <div class="skill-item">
+            <img src="assets/icons/vscode.svg" alt="Visual Studio Code">
+            <span>VS Code</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- EDUCATION WINDOW -->
+<div class="window popup" id="educationWindow" role="dialog" aria-hidden="true" aria-labelledby="educationTitle" tabindex="-1">
+    <div class="window-header drag">
+        <span id="educationTitle">education</span>
+        <button type="button" data-close="educationWindow" aria-label="Close education window">x</button>
+    </div>
+
+    <div class="window-body education-list">
+        <div class="education-item">
+            <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+            <p class="edu-meta">2023 - Expected 2027</p>
+            <p>Mahakal Institute of Technology and Management, Ujjain</p>
+            <p>Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal (M.P)</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Higher Secondary (Class 12)</h3>
+            <p class="edu-meta">2023</p>
+            <p>Government High School, Bhourasa, Madhya Pradesh</p>
+            <p>Percentage: 65%</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Secondary (Class 10)</h3>
+            <p class="edu-meta">2021</p>
+            <p>Bright Future Academy School, Madhya Pradesh</p>
+            <p>Percentage: 65%</p>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT WINDOW -->
+<div class="window popup" id="contactWindow" role="dialog" aria-hidden="true" aria-labelledby="contactTitle" tabindex="-1">
+    <div class="window-header drag">
+        <span id="contactTitle">contact</span>
+        <button type="button" data-close="contactWindow" aria-label="Close contact window">x</button>
+    </div>
+
+    <div class="window-body contact-grid">
+
+        <div class="contact-item">
+            <img src="assets/icons/email.svg" alt="Email">
+            <a href="mailto:princeverma.codes@gmail.com">Email</a>
+        </div>
+
+        <div class="contact-item">
+            <img src="assets/icons/github.svg" alt="GitHub">
+            <a href="https://github.com/prince585" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <div class="contact-item">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- CERTIFICATIONS WINDOW -->
+<div class="window popup" id="certificationsWindow" role="dialog" aria-hidden="true" aria-labelledby="certificationsTitle" tabindex="-1">
+    <div class="window-header drag">
+        <span id="certificationsTitle">certifications</span>
+        <button type="button" data-close="certificationsWindow" aria-label="Close certifications window">x</button>
+    </div>
+
+    <div class="window-body cert-grid">
+        <div class="cert-card">
+            <img src="assets/certificate/cert-2.jpg" alt="Certification image 1">
+        </div>
+        <div class="cert-card">
+            <img src="assets/certificate/cert3.jpg" alt="Certification image 2">
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
